@@ -15,6 +15,7 @@ export default StyleSheet.create({
   formContainer:{
     width: 365,
     height: 405,
+    marginTop: 15,
     borderRadius: 20,
     backgroundColor: '#F0F0F7',
   },
@@ -23,7 +24,7 @@ export default StyleSheet.create({
     maxWidth: 308,
     height: 30,
     marginLeft: 27,
-    marginTop: 45,
+    marginTop: 55,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center'
@@ -33,7 +34,7 @@ export default StyleSheet.create({
     fontSize: 24,
     color: '#242530',
   },
-  formAltContainer:{
+  formAltButton:{
     width: 110,
     height: 25,
     alignItems: 'center',
@@ -58,6 +59,28 @@ export default StyleSheet.create({
     height: 60,
     alignSelf: 'center',
     marginTop: 20,
+    fontFamily: 'Quicksand-Regular',
+    fontStyle: 'normal',
+    fontSize: 14,
+    color: '#3C424E',
+    paddingLeft: 15,
+  },
+
+  checkboxContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 9,
+    marginLeft: 23,
+  },
+  checkbox: {
+    width: 20,
+    height: 20
+  },
+  checkboxLabel: {
+    fontFamily: 'Quicksand-Medium',
+    fontSize: 12,
+    marginLeft: 15,
+    color: '#989EA6',
   },
 
   buttonText: {
@@ -66,7 +89,7 @@ export default StyleSheet.create({
     color: '#EFF5F6',
   },
   buttonPrimary: {
-    marginTop: 38,
+    marginTop: 12,
     alignSelf: 'center',
     alignItems: 'center',
     justifyContent: 'center',
@@ -74,5 +97,22 @@ export default StyleSheet.create({
     height: 60,
     borderRadius: 10,
     backgroundColor: '#32ACBD',
+  },
+
+  footerStairs: {
+    width: 242, 
+    height: 219, 
+    backgroundColor: 'transparent',
+    backfaceVisibility: 'hidden',
+    position: 'absolute',
+    right: -50,
+    bottom: -80
+  },
+  footerDeco: {
+    width: 220, 
+    height: 105, 
+    position: 'absolute',
+    bottom: -50,
+    left: 10
   },
 });
