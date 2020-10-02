@@ -65,7 +65,7 @@ const Login = () => {
         </TextInput>
         <TextInput  
           style={styles.formInput}
-          placeholder="Senha"
+          placeholder="•••••"
           placeholderTextColor="#989EA6"
           returnKeyType="done"
           autoCorrect={false}
