@@ -22,6 +22,7 @@ const Register = () => {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [passwordConfirmation, setPasswordConfirmation] = useState('');
   const [avoidKeyboard, setAvoidKeyboard] = useState(false);
 
   function handleNavigateToLogin() {
@@ -101,8 +102,8 @@ const Register = () => {
           autoCorrect={false}
           secureTextEntry={true}
           onFocus={() => setAvoidKeyboard(true)}
-          onChangeText={password => setPassword(password)}
-          defaultValue={password}
+          onChangeText={passwordConfirmation => setPasswordConfirmation(passwordConfirmation)}
+          defaultValue={passwordConfirmation}
         >
 
         </TextInput>
