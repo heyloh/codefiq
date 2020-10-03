@@ -117,3 +117,33 @@ Se tudo deu certo, o app deve estar disponível agora! 👩‍🔧
 
 ### Mobile:
 - <a href="https://reactnative.dev/">React Native<a/> ⚛️
+
+## Desenvolvedores 👨‍💻
+
+### Arlene Pelenda
+Trabalho no Projeto:
+ - Idealizadora
+ - Autora da documentação
+ - ...
+
+### Lohana Torres
+Trabalho no Projeto:
+ - Idealizadora
+ - Design de UI/UX
+ - Desenvolvimento do frontend mobile
+
+### Gean de Magalhães
+Trabalho no Projeto:
+ - Idealizador
+ - Produtor de conteúdo
+ - ...
+
+### Autor
+---
+
+ <img style="border-radius: 50%;" src="https://avatars2.githubusercontent.com/u/47690013?s=460&u=8808c45f4698a8f07e21546050eca31b2b91a82d&v=4" width="100px;" alt=""/>
+ <br />
+ <sub><b>Lohana Torres</b></sub>
+
+
+Feito com ❤️ por Lohana Torres 👋🏽
