@@ -34,21 +34,44 @@ foi projetado o <strong>Codefiq</strong>, com o foco de ajudar aqueles que quere
 $ cd mobile
 
 ```
+
 ```bash
+
 $ yarn
 
+```
 > ou
+
+```bash
 
 $ npm install
 
 ```
 
+```bash
+
 $ yarn start
-// ou
+
+```
+> ou
+
+```bash
+
 $ npm start
 
+```
+
+```bash
+
 $ yarn android
-// ou 
+
+```
+> ou 
+
+```bash
+
 $ npm android
+
+```
 
 ## 🛠️ Tecnologias
