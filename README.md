@@ -17,7 +17,8 @@
 Considerando que grande parte dos aplicativos que ensinam a programar estão disponibilizados em língua estrangeira, o que impossibilita vários brasileiros que não possuem fluência nessas de continuar seus estudos nesses aplicativos,
 foi projetado o <strong>Codefiq</strong>.
 
-Com o foco de ajudar aqueles que querem aprender sobre programação desde o zero, porém não sabem por onde começar. Com este app, com conteúdo em nossa língua nativa 🇧🇷, aprenda desde Lógica de Programação até tópicos mais avançados em qualquer lugar. 📱
+Com o foco de ajudar aqueles que querem aprender sobre programação desde o zero, porém não sabem por onde começar. Com este app, com conteúdo em nossa língua nativa, aprenda desde Lógica de Programação até tópicos mais avançados em qualquer lugar
+da forma mais simplificada que nosso time puder ensinar. 😉
 
 ## 🎨 Layout
 
