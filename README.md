@@ -128,20 +128,20 @@ Se tudo deu certo, o app deve estar disponível agora! 👩‍🔧
 
 ## Desenvolvedores 👨‍💻
 
-### Arlene Pelenda
-Trabalho no Projeto:
+### Arlene Pelenda 
+⚙️ Contribuições:
  - Idealizadora
  - Autora da documentação
  - ...
 
 ### Lohana Torres
-Trabalho no Projeto:
+⚙️ Contribuições:
  - Idealizadora
  - Design de UI/UX
  - Desenvolvimento do frontend mobile
 
 ### Gean de Magalhães
-Trabalho no Projeto:
+⚙️ Contribuições:
  - Idealizador
  - Produtor de conteúdo
  - ...
