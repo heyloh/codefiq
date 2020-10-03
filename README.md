@@ -138,10 +138,7 @@ Trabalho no Projeto:
  - Produtor de conteúdo
  - ...
 
-## Autor
+## Autora
 
- <img style="border-radius: 50%;" src="https://avatars2.githubusercontent.com/u/47690013?s=460&u=8808c45f4698a8f07e21546050eca31b2b91a82d&v=4" width="100px;" alt=""/>
- <b>Lohana Torres</b>
-
-
+<img style="border-radius: 20px;" src="https://avatars2.githubusercontent.com/u/47690013?s=460&u=8808c45f4698a8f07e21546050eca31b2b91a82d&v=4" width="100px;" alt=""/>
 Feito com ❤️ por Lohana Torres 👋🏽
