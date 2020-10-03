@@ -7,7 +7,7 @@
 <h4 align="center"> 
 	🚧  Em construção...  🚧
 </h4>
-
+---
 ## 💡 Objetivo
 
 Considerando que grande parte dos aplicativos que ensinam a programar estão disponibilizados em língua estrangeira, o que impossibilita vários brasileiros que não possuem fluência nessas de continuar seus estudos nesses aplicativos,
@@ -16,7 +16,7 @@ foi projetado o <strong>Codefiq</strong>, com o foco de ajudar aqueles que quere
 ## 🎨 Layout
 
 Em breve...
-
+---
 ## 💻 Executando o Codefiq
 
 ### Pré-requisitos
@@ -108,6 +108,7 @@ $ npm android
 
 Se tudo deu certo, o app deve estar disponível agora! 👩‍🔧
 
+---
 ## 🛠️ Tecnologias
 
 ### Backend:
@@ -118,6 +119,7 @@ Se tudo deu certo, o app deve estar disponível agora! 👩‍🔧
 ### Mobile:
 - <a href="https://reactnative.dev/">React Native<a/> ⚛️
 
+---
 ## Desenvolvedores 👨‍💻
 
 ### Arlene Pelenda
@@ -138,6 +140,7 @@ Trabalho no Projeto:
  - Produtor de conteúdo
  - ...
 
+---
 ## Autora
 
 <img style="border-radius: 20px;" src="https://avatars2.githubusercontent.com/u/47690013?s=460&u=8808c45f4698a8f07e21546050eca31b2b91a82d&v=4" width="100px;" alt=""/>
