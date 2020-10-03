@@ -12,15 +12,15 @@
 
 ## 💡 Objetivo
 
-<strong>Codefiq</strong> é um projeto idealizado para conclusão do curso técnico em Informática no CEFET/RJ, mas que pretende ir além do diploma. 
+Este é um projeto idealizado para conclusão do curso técnico em Informática no CEFET/RJ, mas que pretende ir além do diploma. 
 
 Considerando que grande parte dos aplicativos que ensinam a programar estão disponibilizados em língua estrangeira, o que impossibilita vários brasileiros que não possuem fluência nessas de continuar seus estudos nesses aplicativos,
 foi projetado o <strong>Codefiq</strong>.
 
-De 🇧🇷 para 🇧🇷
+### De 🇧🇷 para 🇧🇷
 
-Com o foco de ajudar aqueles que querem aprender sobre programação desde o zero, porém não sabem por onde começar. Com este app, com conteúdo em nossa língua nativa, aprenda desde Lógica de Programação até tópicos mais avançados em qualquer lugar
-da forma mais simplificada que nosso time puder ensinar. 😉
+Com o foco de ajudar aqueles que querem aprender sobre programação desde o zero, porém não sabem por onde começar e gostam da possibilidade de aprender de qualquer lugar com o auxílio do seu 📱. Este app, com conteúdo em nossa língua nativa, te possibilita aprender desde Lógica de Programação até tópicos mais avançados
+ da forma mais simplificada que nosso time puder ensinar. 😉
 
 ## 🎨 Layout
 
