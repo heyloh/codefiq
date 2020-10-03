@@ -15,9 +15,21 @@ foi projetado o <strong>Codefiq</strong>, com o foco de ajudar aqueles que quere
 
 ## 🎨 Layout
 
+Em breve...
+
 ## 💻 Executando o Codefiq
 
 ### Pré-requisitos
+
+É necessário ter instalado na sua máquina para execução desse projeto:
+- NodeJS
+- Gerenciador de pacotes (Npm ou Yarn)
+
+Além disso, pode ser necessário seguir o passo a passo do setup disponível no site do React Native,
+ caso queira executar na sua máquina, é preciso ter um emulador configurado
+ e caso queira executar em um dispositivo android real certifique-se de tê-lo conectado por um cabo usb com modo de depuração do android ativo. 
+
+> Em breve mais detalhes...
 
 ### 🌐 Rodando o Servidor
 
