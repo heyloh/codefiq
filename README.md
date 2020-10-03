@@ -126,7 +126,7 @@ Se tudo deu certo, o app deve estar disponível agora! 👩‍🔧
 
 ---
 
-## Desenvolvedores 👨‍💻
+## 👨‍💻 Desenvolvedores
 
 ### Arlene Pelenda 
 ⚙️ Contribuições:
