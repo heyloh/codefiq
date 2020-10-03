@@ -109,3 +109,11 @@ $ npm android
 Se tudo deu certo, o app deve estar disponível agora! 👩‍🔧
 
 ## 🛠️ Tecnologias
+
+### Backend:
+- NodeJS
+- ...
+- ...
+
+### Mobile:
+- React Native ⚛️
