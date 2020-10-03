@@ -24,6 +24,8 @@ Com o foco de ajudar aqueles que querem aprender sobre programação desde o zer
 Este app, com conteúdo em nossa língua nativa, te possibilita aprender desde Lógica de Programação até tópicos mais avançados
  da forma mais simplificada que nosso time puder ensinar. 😉
 
+---
+
 ## 🎨 Layout
 
 Em breve...
