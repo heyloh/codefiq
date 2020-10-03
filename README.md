@@ -23,10 +23,28 @@ foi projetado o <strong>Codefiq</strong>, com o foco de ajudar aqueles que quere
 
 ```bash
 
+<h4 align="center"> 
+	🚧  Em construção...  🚧
+</h4>
+
 ```
 ### 📱 Rodando o Aplicativo
 
 ```bash
+
+$ cd mobile
+
+$ yarn
+// ou
+$ npm install
+
+$ yarn start
+// ou
+$ npm start
+
+$ yarn android
+// ou 
+$ npm android
 
 ```
 
