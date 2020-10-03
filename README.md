@@ -7,3 +7,24 @@
 <h4 align="center"> 
 	🚧  Em construção...  🚧
 </h4>
+
+## 💡 Objetivo
+
+## 🎨 Layout
+
+## 💻 Executando o Codefiq
+
+### Pré-requisitos
+
+### 🌐 Rodando o Servidor
+
+```bash
+
+```
+### 📱 Rodando o Aplicativo
+
+```bash
+
+```
+
+## 🛠️ Tecnologias
