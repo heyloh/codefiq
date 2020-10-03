@@ -29,7 +29,9 @@ foi projetado o <strong>Codefiq</strong>, com o foco de ajudar aqueles que quere
 ### 📱 Rodando o app Codefiq
 
 <br>
+
 Entre na pasta do mobile
+
 ```bash
 
 $ cd mobile
@@ -37,12 +39,15 @@ $ cd mobile
 ```
 
 <br>
+
 Instale as dependências
+
 ```bash
 
 $ yarn
 
 ```
+
 > ou
 
 ```bash
@@ -50,13 +55,17 @@ $ yarn
 $ npm install
 
 ```
+
 <br>
+
 Inicie o metro bundler
+
 ```bash
 
 $ yarn start
 
 ```
+
 > ou
 
 ```bash
@@ -64,13 +73,17 @@ $ yarn start
 $ npm start
 
 ```
+
 <br>
+
 Instale o app
+
 ```bash
 
 $ yarn android
 
 ```
+
 > ou 
 
 ```bash
@@ -78,7 +91,9 @@ $ yarn android
 $ npm android
 
 ```
+
 <br>
+
 Se tudo deu certo, o app deve estar disponível agora! 👩‍🔧
 
 ## 🛠️ Tecnologias
