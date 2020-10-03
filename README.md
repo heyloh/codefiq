@@ -12,6 +12,10 @@
 
 ## 💡 Objetivo
 
+<strong>Codefiq</strong> é um projeto idealizado para conclusão do curso técnico em Informática no CEFET/RJ, mas que pretende ir além do diploma. 
+
+<br>
+
 Considerando que grande parte dos aplicativos que ensinam a programar estão disponibilizados em língua estrangeira, o que impossibilita vários brasileiros que não possuem fluência nessas de continuar seus estudos nesses aplicativos,
 foi projetado o <strong>Codefiq</strong>, com o foco de ajudar aqueles que querem aprender sobre programação desde o zero, porém não sabem por onde começar.
 
@@ -130,20 +134,20 @@ Se tudo deu certo, o app deve estar disponível agora! 👩‍🔧
 
 ### Arlene Pelenda 
 ⚙️ Contribuições:
- - Idealizadora
- - Autora da documentação
+ - Idealização
+ - Produção de documentação
  - ...
 
 ### Lohana Torres
 ⚙️ Contribuições:
- - Idealizadora
+ - Idealização
  - Design de UI/UX
- - Desenvolvimento do frontend mobile
+ - Desenvolvimento da aplicação mobile
 
 ### Gean de Magalhães
 ⚙️ Contribuições:
- - Idealizador
- - Produtor de conteúdo
+ - Idealização
+ - Produção de conteúdo didático
  - ...
 
 ---
