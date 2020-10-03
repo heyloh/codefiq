@@ -111,9 +111,9 @@ Se tudo deu certo, o app deve estar disponível agora! 👩‍🔧
 ## 🛠️ Tecnologias
 
 ### Backend:
-- NodeJS
+- <a href="https://nodejs.org/en/">NodeJS<a/>
 - ...
 - ...
 
 ### Mobile:
-- React Native ⚛️
+- <a href="https://reactnative.dev/">React Native<a/> ⚛️
