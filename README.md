@@ -28,7 +28,13 @@ Este app, com conteúdo em nossa língua nativa, te possibilita aprender desde L
 
 ## 🎨 Layout
 
-Em breve...
+<p align="center">
+  <img alt="Codefiq" title="Codefiq" src="./assets/splash-screen.png" width="200px">
+
+  <img alt="Codefiq" title="Codefiq" src="./assets/login-screen.png" width="200px">
+  
+  <img alt="Codefiq" title="Codefiq" src="./assets/register-screen.png" width="200px">
+</p>
 
 ---
 
@@ -128,12 +134,13 @@ Se tudo deu certo, o app deve estar disponível agora! 👩‍🔧
 ## 🛠️ Tecnologias
 
 ### Backend:
-- <a href="https://nodejs.org/en/">NodeJS<a/>
+- <a href="https://nodejs.org/en/">NodeJS</a>
 - ...
 - ...
 
 ### Mobile:
-- <a href="https://reactnative.dev/">React Native<a/> ⚛️
+- <a href="https://reactnative.dev/">React Native</a> ⚛️
+- <a href="https://reactnavigation.org/">React Navigation</a> ⚛️
 
 ---
 
@@ -161,4 +168,4 @@ Se tudo deu certo, o app deve estar disponível agora! 👩‍🔧
 
 ## Autora
 
- <p>Feito com 💙 por Lohana Torres<p/>
+ <p>Feito com 💙 por Lohana Torres</p>
