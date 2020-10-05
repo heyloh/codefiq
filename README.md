@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="Codefiq" title="#Codefiq" src="./mobile/src/assets/images/banner.png" />
+  <img alt="Codefiq" title="#Codefiq" src="./assets/banner.png" />
 </h1>
 
 <p align="center">📱 Um app que te ensina a programar em pt/🇧🇷</p>
