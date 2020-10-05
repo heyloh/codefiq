@@ -143,6 +143,7 @@ Se tudo deu certo, o app deve estar disponível agora! 👩‍🔧
 ### Mobile:
 - <a href="https://reactnative.dev/">React Native</a> ⚛️
 - <a href="https://reactnavigation.org/">React Navigation</a> ⚛️
+> Mais informações no arquivo package.json da pasta /mobile
 
 ---
 
