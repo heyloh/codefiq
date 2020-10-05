@@ -139,6 +139,7 @@ Se tudo deu certo, o app deve estar disponível agora! 👩‍🔧
 - <a href="https://nodejs.org/en/">NodeJS</a>
 - ...
 - ...
+> Mais informações no arquivo package.json da pasta /server
 
 ### Mobile:
 - <a href="https://reactnative.dev/">React Native</a> ⚛️
