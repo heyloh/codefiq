@@ -8,6 +8,15 @@
 	🚧  Em construção...  🚧
 </h4>
 
+<p align="center">
+ <a href="#-objetivo">Objetivo</a> •
+ <a href="#-layout">Layout</a> • 
+ <a href="#-executando-o-codefiq">Como executar</a> • 
+ <a href="#-tecnologias">Tecnologias</a> • 
+ <a href="#-desenvolvedores">Desenvolvedores</a> • 
+ <a href="#-autora">Autora</a> •
+</p>
+
 ---
 
 ## 💡 Objetivo
@@ -37,6 +46,8 @@ Este app, com conteúdo em nossa língua nativa, te possibilita aprender desde L
   
   <img alt="Codefiq" title="Codefiq" src="./assets/register-screen.png" width="200px">
 </p>
+
+> Em breve Home Screen e Class-Example Screen
 
 ---
 
@@ -134,13 +145,15 @@ Se tudo deu certo, o app deve estar disponível agora! 👩‍🔧
 
 ## 🛠️ Tecnologias
 
-### Backend:
+As ferramentas usadas no
+
+#### Backend:
 - <a href="https://nodejs.org/en/">NodeJS</a>
 - ...
 - ...
 > Mais informações no arquivo package.json da pasta /server
 
-### Mobile:
+#### Mobile:
 - <a href="https://reactnative.dev/">React Native</a> ⚛️
 - <a href="https://reactnavigation.org/">React Navigation</a> ⚛️
 > Mais informações no arquivo package.json da pasta /mobile
@@ -169,6 +182,6 @@ Se tudo deu certo, o app deve estar disponível agora! 👩‍🔧
 
 ---
 
-## Autora
+## 📝 Autora
 
  <p>Feito com 💙 por Lohana Torres</p>
