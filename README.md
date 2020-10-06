@@ -149,19 +149,19 @@ Se tudo deu certo, o app deve estar disponível agora! 👩‍🔧
 
 ## 👨‍💻 Desenvolvedores
 
-### Arlene Pelenda 
+### Arlene Pelenda([@Julenne](https://github.com/Julenne))
 ⚙️ Contribuições:
  - Idealização
  - Produção de documentação
  - ...
 
-### Lohana Torres
+### Lohana Torres([@heyloh](https://github.com/heyloh))
 ⚙️ Contribuições:
  - Idealização
  - Design de UX/UI
  - Desenvolvimento da aplicação mobile
 
-### Gean de Magalhães
+### Gean de Magalhães([@GE28](https://github.com/GE28))
 ⚙️ Contribuições:
  - Idealização
  - Produção de conteúdo didático
