@@ -19,7 +19,7 @@ foi projetado o <strong>Codefiq</strong>.
 
 ### De 🇧🇷 para 🇧🇷
 
-Com o foco de ajudar aqueles que querem aprender sobre programação desde o zero, porém não sabem por onde começar e gostam da possibilidade de aprender de qualquer lugar com o auxílio do seu 📱. 
+Com o foco de ajudar aqueles que querem aprender sobre programação desde o zero, porém não sabem por onde começar e gostam da possibilidade de aprender de qualquer lugar com o auxílio do seu smartphone. 
 
 Este app, com conteúdo em nossa língua nativa, te possibilita aprender desde Lógica de Programação até tópicos mais avançados
  da forma mais simplificada que nosso time puder ensinar. 😉
