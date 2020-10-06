@@ -59,6 +59,7 @@ Além disso, pode ser necessário seguir o passo a passo do setup disponível no
 ```bash
 
 $ git clone https://github.com/heyloh/codefiq.git
+
 # entre na pasta do projeto
 $ cd codefiq
 
@@ -157,7 +158,7 @@ Se tudo deu certo, o app deve estar disponível agora! 👩‍🔧
 ### Lohana Torres
 ⚙️ Contribuições:
  - Idealização
- - Design de UI/UX
+ - Design de UX/UI
  - Desenvolvimento da aplicação mobile
 
 ### Gean de Magalhães
