@@ -54,6 +54,16 @@ Além disso, pode ser necessário seguir o passo a passo do setup disponível no
 
 > Em breve mais detalhes...
 
+### ♊ Clonando o Repositório
+
+```bash
+
+$ git clone https://github.com/heyloh/codefiq.git
+# entre na pasta do projeto
+$ cd codefiq
+
+```
+
 ### 🌐 Rodando o Servidor
 
 ```bash
@@ -79,14 +89,10 @@ Instale as dependências
 
 ```bash
 
+# utilizando yarn
 $ yarn
 
-```
-
-> ou
-
-```bash
-
+# utilizando npm
 $ npm install
 
 ```
@@ -97,14 +103,10 @@ Inicie o metro bundler
 
 ```bash
 
+# utilizando yarn
 $ yarn start
 
-```
-
-> ou
-
-```bash
-
+# utilizando npm
 $ npm start
 
 ```
@@ -115,14 +117,10 @@ Instale o app
 
 ```bash
 
+# utilizando yarn
 $ yarn android
 
-```
-
-> ou 
-
-```bash
-
+# utilizando npm
 $ npm android
 
 ```
