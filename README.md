@@ -171,7 +171,7 @@ As ferramentas usadas no
 ### Lohana Torres([@heyloh](https://github.com/heyloh))
 ⚙️ Contribuições:
  - Idealização
- - Design de UX/UI
+ - Design de UI
  - Desenvolvimento da aplicação mobile
 
 ### Gean de Magalhães([@GE28](https://github.com/GE28))
