@@ -165,20 +165,28 @@ As ferramentas usadas no
 ### Arlene Pelenda([@Julenne](https://github.com/Julenne))
 ⚙️ Contribuições:
  - Idealização
- - Produção de documentação
+ - Desenvolvimento do Backend da aplicação
  - ...
 
 ### Lohana Torres([@heyloh](https://github.com/heyloh))
 ⚙️ Contribuições:
  - Idealização
  - Design de UI
- - Desenvolvimento da aplicação mobile
+ - Desenvolvimento da aplicação Mobile
 
 ### Gean de Magalhães([@GE28](https://github.com/GE28))
 ⚙️ Contribuições:
  - Idealização
  - Produção de conteúdo didático
  - ...
+ 
+ ### Mariana da Conceição
+ ⚙️ Contribuições:
+ - Produção de documentação
+ - Produção de Diagramas
+ - Pesquisa e Review
+ - ...
+ 
 
 ---
 
