@@ -180,7 +180,7 @@ As ferramentas usadas no
  - Produção de conteúdo didático
  - ...
  
- ### Mariana da Conceição
+ ### Mariana da Conceição([@MariTdc](https://github.com/MariTdc))
  ⚙️ Contribuições:
  - Produção de documentação
  - Produção de Diagramas
