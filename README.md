@@ -2,7 +2,7 @@
   <img alt="Codefiq" title="#Codefiq" src="./assets/banner.png" />
 </h1>
 
-<p align="center">📱 Um app que te ensina a programar em pt/🇧🇷</p>
+<p align="center">📱 Um app que te ensina a programar em pt-🇧🇷</p>
 
 <h4 align="center"> 
 	🚧  Em construção...  🚧
