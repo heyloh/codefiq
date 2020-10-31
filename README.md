@@ -12,7 +12,7 @@
  <a href="#-objetivo">Objetivo</a> •
  <a href="#-layout">Layout</a> • 
  <a href="#-executando-o-codefiq">Como executar</a> • 
- <a href="#-tecnologias">Tecnologias</a> • 
+ <a href="#-tecnologias">Tecnologias</a> •  
  <a href="#-desenvolvedores">Desenvolvedores</a> • 
  <a href="#-licença">Licença</a>
 </p>
@@ -143,9 +143,9 @@ Se tudo deu certo, o app deve estar disponível agora! 👩‍🔧
 
 ---
 
-## 🛠️ Tecnologias
+## 🛠 Tecnologias
 
-As ferramentas usadas no
+As seguintes ferramentas foram usadas na construção do projeto:
 
 #### Backend:
 - <a href="https://nodejs.org/en/">NodeJS</a>
