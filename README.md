@@ -14,7 +14,7 @@
  <a href="#-executando-o-codefiq">Como executar</a> • 
  <a href="#-tecnologias">Tecnologias</a> • 
  <a href="#-desenvolvedores">Desenvolvedores</a> • 
- <a href="#-autora">Autora</a> •
+ <a href="#-autora">Autora</a>
 </p>
 
 ---
