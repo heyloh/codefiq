@@ -14,7 +14,7 @@
  <a href="#-executando-o-codefiq">Como executar</a> • 
  <a href="#-tecnologias">Tecnologias</a> • 
  <a href="#-desenvolvedores">Desenvolvedores</a> • 
- <a href="#-autora">Autora</a>
+ <a href="#-licença">Licença</a>
 </p>
 
 ---
@@ -186,10 +186,14 @@ As ferramentas usadas no
  - Produção de Diagramas
  - Pesquisa e Review
  - ...
- 
 
 ---
 
-## 📝 Autora
+## 📝 Licença
 
- <p>Feito com 💙 por Lohana Torres</p>
+Este projeto esta sobe a licença [Apache 2.0](./LICENSE).
+
+---
+
+<p align="center">Feito com 💙 por Lohana Torres 👋🏽</p>
+
