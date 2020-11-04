@@ -40,14 +40,18 @@ Este app, com conteúdo em nossa língua nativa, te possibilita aprender desde L
 <p align="center">
   <img alt="Codefiq" title="Codefiq" src="./assets/splash-screen.png" width="200px">
 
-  <img alt="Codefiq" title="Codefiq" src="./assets/welcome-screen.png" width="200px">
+  <img alt="Codefiq" title="Codefiq" src="./assets/welcome-screen-v2.png" width="200px">
 
   <img alt="Codefiq" title="Codefiq" src="./assets/login-screen.png" width="200px">
   
   <img alt="Codefiq" title="Codefiq" src="./assets/register-screen.png" width="200px">
+  
+  <img alt="Codefiq" title="Codefiq" src="./assets/content-list-v2.png" width="200px">
+  
+  <img alt="Codefiq" title="Codefiq" src="./assets/class-template-v2.png" width="200px">
+  
+  <img alt="Codefiq" title="Codefiq" src="./assets/class-template-v2-2.png" width="200px">
 </p>
-
-> Em breve Home Screen e Class-Example Screen
 
 ---
 
