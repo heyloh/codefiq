@@ -37,6 +37,8 @@ Este app, com conteúdo em nossa língua nativa, te possibilita aprender desde L
 
 ## 🎨 Layout
 
+Veja o protótipo no [Figma](https://www.figma.com/proto/GLdUH9W0zdrJ7RMUumZxNS/Codefiq?node-id=122%3A784&scaling=scale-down).
+
 <p align="center">
   <img alt="Codefiq" title="Codefiq" src="./assets/splash-screen.png" width="200px">
 
