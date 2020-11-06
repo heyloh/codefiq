@@ -1,3 +1,5 @@
+const { hash } = require('bcryptjs');
+
 const User = require('../models/User');
 
 module.exports = {
@@ -9,8 +11,14 @@ module.exports = {
   async store(request, response) {
     const { username, email, password } = request.body;
 
-    const user = await User.create({ username, email, password_hash: password });
+    const hashedPassword = await hash(password, 8);
 
-    return response.json(user);
+    const user = await User.create({ username, email, password_hash: hashedPassword });
+
+    const json_user = user.toJSON();
+
+    delete json_user.password_hash;
+
+    return response.status(201).json(json_user);
   }
 };
