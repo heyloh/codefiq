@@ -4,7 +4,7 @@ module.exports = {
   dialect: 'postgres',    /*  Selected database */
   host: 'localhost',
   username: 'postgres',   /*  Your Image name */
-  password: 'docker',     /*  Your container password */
+  password: 'postgres',     /*  Your container password */
   database: 'codefiq',    /* Desired name */
   define: {               /* Standards */
     timestamps: true,
