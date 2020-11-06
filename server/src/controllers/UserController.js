@@ -1,6 +1,6 @@
-const { hash } = require('bcryptjs');
-
 const User = require('../models/User');
+
+const { hash } = require('bcryptjs');
 
 module.exports = {
   /* The following method is used for listing all users registered */
@@ -14,11 +14,8 @@ module.exports = {
     /* Getting user data from the request */
     const { username, email, password } = request.body;
 
-    /* Hashing password, for security reasons */
-    const hashedPassword = await hash(password, 8);
-
     /* Inserting the new User on the database */
-    const user = await User.create({ username, email, password_hash: hashedPassword });
+    const user = await User.create({ username, email, password});
 
     /* For blocking the response from showing the password*/
     const json_user = user.toJSON();
