@@ -2,6 +2,7 @@
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
+    /* Creating the users table on the database */
     return queryInterface.createTable('users', {
       id: {
         type: Sequelize.INTEGER,
@@ -34,6 +35,7 @@ module.exports = {
   },
 
   down: async (queryInterface, Sequelize) => {
+    /* deleting the users table from the database */
     return queryInterface.dropTable('users');
   }
 };
