@@ -17,6 +17,7 @@
     "sequelize-cli": "^6.2.0"
   },
   "scripts": {
-    "start": "nodemon src/server.js"
+    "start": "nodemon src/server.js",
+    "test": "jest"
   }
 }
