@@ -1,7 +1,5 @@
 const User = require('../models/User');
 
-const { hash } = require('bcryptjs');
-
 module.exports = {
   /* The following method is used for listing all users registered */
   async index(request, response) {
