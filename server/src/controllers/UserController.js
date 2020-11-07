@@ -15,11 +15,16 @@ module.exports = {
     const { username, email, password } = request.body;
 
     /* Inserting the new User on the database */
-    const user = await User.create({ username, email, password});
+    try {
+      const user = await User.create({ username, email, password});
+    } catch (e){
+      /* Testing for errors in user creation  */
+      const {message : error} = e;
+      return response.status(409).json({error});
+    }
 
     /* For blocking the response from showing the password*/
-    const json_user = user.toJSON();
-    delete json_user.password_hash;
+    const json_user = user.get({ plain: true });
 
     /* Returning successfully */
     return response.status(201).json(json_user);
