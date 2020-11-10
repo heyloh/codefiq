@@ -1,0 +1,14 @@
+version: "3"
+services:
+  bd:
+    image: postgres
+    container_name: "codefiq"
+    environment: 
+      - POSTGRES_DB=codefiq
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - TZ=GMT
+    ports: 
+      - '5432:5432'
+    volumes:
+      - ./data:/var/lib/postgresql/data
