@@ -167,7 +167,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - <a href="https://nodemon.io/">Nodemon</a>
 - <a href="https://www.docker.com/">Docker</a> 🐋
 - <a href="https://sequelize.org/">Sequelize</a>
-- <a href="https://www.postgresql.org/">PostgreSQL</a> 🐘
+- <a href="https://www.postgresql.org/">PostgreSQL</a> 🐘 
+- <a href="https://jestjs.io/">Jest</a> 
 > Mais informações no arquivo package.json da pasta /server
 
 #### Mobile:
