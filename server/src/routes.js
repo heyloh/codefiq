@@ -10,7 +10,7 @@ routes.get('/users', UserController.index);
 /* Route for creating a new user */
 routes.post('/users', UserController.store);
 /* Route for listing courses */
-routes.get('/courses', CourseController.allCourses);
+routes.get('/courses', CourseController.index);
 /* Route for creating a new course */
 routes.post('/courses', CourseController.store);
 
