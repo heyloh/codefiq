@@ -17,7 +17,7 @@ const Header = ({ title, showBack = true }) => {
           onPress={navigation.goBack} 
           style={styles.backButton}
         >
-          <Image source={arrowBack} />
+          <Image source={arrowBack} style={styles.arrowBack} />
         </BorderlessButton>
       ) : (
         <View style={styles.view} />

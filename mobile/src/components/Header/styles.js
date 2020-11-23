@@ -10,7 +10,7 @@ export default StyleSheet.create({
   },
 
   title: {
-    fontFamily: 'Quicksand_500Medium',
+    fontFamily: 'Quicksand-Medium',
     fontSize: 14,
     color: '#C2C3CB'
   },
@@ -28,5 +28,11 @@ export default StyleSheet.create({
 
   view: {
     marginLeft: 45,
+  },
+
+  arrowBack: {
+    width: 24,
+    height: 24,
+    resizeMode: 'contain',
   }
 });
