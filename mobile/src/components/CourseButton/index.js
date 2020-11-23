@@ -13,7 +13,7 @@ const CourseButton = ({ isLocked = true, title, topic }) => {
   const { navigate } = useNavigation();
 
   function handleNavigateToTopic() {
-    navigate(topic);
+    navigate('Topic');
   }
 
   return (
