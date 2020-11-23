@@ -4,11 +4,11 @@ const connection = require('../database/index');
 
 describe('Courses', () => {
 
-  beforeEach( async() => {
-    await connection.sync();//para conexão com o banco de dados
+  beforeEach(async () => {
+    await connection.sync();
   });
 
-  afterAll(async()=>{
+  afterAll(async () => {
     await connection.clear();
     await connection.close();
   });
@@ -20,12 +20,14 @@ describe('Courses', () => {
       .send({
         name: 'Testando1'
       });
-      expect(response.statusCode).toEqual(200);
+
+      expect(response.statusCode).toEqual(201);
   });
   
   test('should show all courses', async () => {
-    const res = await request(app)
-      .get('/courses')
-      
+    const response = await request(app)
+      .get('/courses');
+
+      expect(response.statusCode).toEqual(200);
   });
 });
