@@ -9,7 +9,7 @@ import arrowRight from '../../assets/icons/mdi_arrow_right.png';
 import styles from './styles';
 import { RectButton } from 'react-native-gesture-handler';
 
-const CourseButton = ({ isLocked = true, title, topic }) => {
+const CourseButton = ({ isLocked = true, title }) => {
   const { navigate } = useNavigation();
 
   function handleNavigateToTopic() {
