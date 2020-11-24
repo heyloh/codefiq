@@ -33,5 +33,28 @@ export default StyleSheet.create({
     height: 24,
     resizeMode: 'contain',
     marginRight: 10
+  },
+  dialogTitle: {
+    backgroundColor: '#1A1B21',
+  },
+  dialogTitleText: {
+    fontFamily: 'Quicksand-Bold',
+    fontSize: 18,
+    color: '#EFF5F6',
+  },
+  text: {
+    fontFamily: 'Quicksand-Medium',
+    fontSize: 14,
+    color: '#EFF5F6',
+  },
+  dialogContent: {
+    backgroundColor: '#20212A',
+    padding: 20,
+    maxWidth: 350,
+    height: 80,
+    justifyContent: 'center',
+  },
+  dialogButton: {
+    backgroundColor: '#77BA7D',
   }
 });
