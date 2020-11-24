@@ -3,7 +3,8 @@ const { Model, DataTypes } = require('sequelize');
 class Subject extends Model {
   static init(connection){
     super.init({
-      name: DataTypes.STRING
+      name: DataTypes.STRING,
+      course_id: DataTypes.INTEGER,
     }, {
       sequelize: connection
     })

@@ -81,7 +81,7 @@ describe('Subjects', () => {
       .type('json')
       .send({
         name: 'Subject',
-        courseId: 1
+        course_id: 1
       });
 
       expect(response.statusCode).toEqual(201);

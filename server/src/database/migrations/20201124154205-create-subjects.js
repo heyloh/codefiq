@@ -10,7 +10,7 @@ module.exports = {
         allowNull: false,
         unique: true,
       },
-      courseId: {
+      course_id: {
         type: Sequelize.INTEGER,
         allowNull: false,
         primarykey: true,

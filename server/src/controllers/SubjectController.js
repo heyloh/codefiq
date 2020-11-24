@@ -9,11 +9,11 @@ module.exports = {
 
   /* The following method is used for creating a new subject */
   async store(request, response, next) {
-    const { name, courseId } = request.body;
+    const { name, course_id } = request.body;
     
     /* Inserting the new subject on the database */
     try {
-      const subject = await Subject.create({ name, courseId });
+      const subject = await Subject.create({ name, course_id });
 
       /* Returning successfully */
       return response.status(201).json(subject);
