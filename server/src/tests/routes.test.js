@@ -63,3 +63,34 @@ describe('Users', () => {
       expect(response.statusCode).toEqual(200);
   });
 });
+
+describe('Subjects', () => {
+
+  beforeEach(async () => {
+    await connection.sync();
+  });
+
+  afterAll(async () => {
+    await connection.clear();
+    await connection.close();
+  });
+
+  test('should create a new subject', async () => {
+    const response = await request(app)
+      .post('/subjects')
+      .type('json')
+      .send({
+        name: 'Subject',
+        courseId: 1
+      });
+
+      expect(response.statusCode).toEqual(201);
+  });
+  
+  test('should show all subjects', async () => {
+    const response = await request(app)
+      .get('/subjects');
+
+      expect(response.statusCode).toEqual(200);
+  });
+});
