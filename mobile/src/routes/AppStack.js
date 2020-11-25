@@ -10,6 +10,7 @@ import Home from '../pages/Home';
 
 // Topics
 import AlgoritmosStack from './AlgoritmosStack';
+import VariaveisStack from './VariaveisStack';
 
 // Components
 import Header from '../components/Header';
@@ -32,6 +33,7 @@ export default function AppStack() {
         <Screen name="Login" component={Login} />
         <Screen name="Register" component={Register} />
         <Screen name="AlgoritmosStack" component={AlgoritmosStack} />
+        <Screen name="VariaveisStack" component={VariaveisStack} />
       </Navigator>
     </NavigationContainer>
   );
