@@ -2,7 +2,7 @@ import {StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
   container: {
-    backgroundColor: '#20212A',
+    backgroundColor: '#3C424E',
     height: 50,
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -11,13 +11,13 @@ export default StyleSheet.create({
     paddingRight: 75,
   },
   text: {
-    fontFamily: 'Quicksand-Medium',
+    fontFamily: 'Quicksand-Bold',
     fontSize: 14,
     color: '#EFF5F6'
   },
   separator: {
     width: 1,
     height: 50,
-    backgroundColor: '#67A8C3'
+    backgroundColor: '#242530'
   }
 });
