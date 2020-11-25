@@ -9,7 +9,7 @@ import Register from '../pages/Register';
 import Home from '../pages/Home';
 
 // Topics
-import TopicTabs from './TopicTabs';
+import AlgoritmosStack from './AlgoritmosStack';
 
 // Components
 import Header from '../components/Header';
@@ -31,14 +31,7 @@ export default function AppStack() {
         <Screen name="Welcome" component={Welcome} />
         <Screen name="Login" component={Login} />
         <Screen name="Register" component={Register} />
-        <Screen 
-          name="Topic" 
-          component={TopicTabs} 
-          options={{
-            headerShown: true,
-            header: () => <Header title="Tópico" /> 
-          }}
-        />
+        <Screen name="AlgoritmosStack" component={AlgoritmosStack} />
       </Navigator>
     </NavigationContainer>
   );

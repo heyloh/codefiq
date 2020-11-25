@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import CourseButton from '../../components/CourseButton';
 
@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <ScrollView  contentContainerStyle={styles.contentContainer}>
       <Text style={styles.courseName}>Lógica de Programação</Text>
-      <CourseButton title="Algoritmos" isLocked={false} topic="Algoritmos" />
+      <CourseButton title="Algoritmos" isLocked={false} topic="AlgoritmosStack" />
       <CourseButton title="Variáveis" />
       <CourseButton title="Objetos"/>
       <CourseButton title="Operadores Lógicos" />

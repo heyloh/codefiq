@@ -10,11 +10,16 @@ import styles from './styles';
 
 const Header = ({ title, showBack = true }) => {
   const navigation = useNavigation();
+
+  function handleNavigateToHome() {
+    navigation.navigate('Home');
+  }
+
   return (
     <View style={styles.container}>
       { showBack ? (
         <BorderlessButton 
-          onPress={navigation.goBack} 
+          onPress={handleNavigateToHome} 
           style={styles.backButton}
         >
           <Image source={arrowBack} style={styles.arrowBack} />
