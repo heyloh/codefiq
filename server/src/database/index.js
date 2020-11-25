@@ -5,6 +5,8 @@ const dbConfig = require('../config/database');
 const User = require('../models/User');
 const Course = require('../models/Course');
 const Subject = require('../models/Subject');
+const Video = require('../models/Video');
+const Exercise = require('../models/Exercise');
 
 /* Setting up the connection */
 const connection = new Sequelize(dbConfig);
@@ -13,5 +15,7 @@ const connection = new Sequelize(dbConfig);
 User.init(connection);
 Course.init(connection);
 Subject.init(connection);
+Video.init(connection);
+Exercise.init(connection);
 
 module.exports = connection;
