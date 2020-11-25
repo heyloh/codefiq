@@ -174,6 +174,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 #### Mobile:
 - <a href="https://reactnative.dev/">React Native</a> ⚛️
 - <a href="https://reactnavigation.org/">React Navigation</a> ⚛️
+- <a href="https://www.npmjs.com/package/react-native-popup-dialog">React Native Popup Dialog</a>
+- <a href="https://github.com/crazycodeboy/react-native-splash-screen">React Native Splash Screen</a>
 > Mais informações no arquivo package.json da pasta /mobile
 
 ---
@@ -191,7 +193,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
  - Idealização
  - Design de UI
  - Desenvolvimento do Mobile da aplicação
- - Desenvolvimento do Backend da aplicação
 
 ### Gean de Magalhães([@GE28](https://github.com/GE28))
 ⚙️ Contribuições:
