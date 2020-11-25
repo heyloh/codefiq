@@ -94,3 +94,73 @@ describe('Subjects', () => {
       expect(response.statusCode).toEqual(200);
   });
 });
+
+describe('Videos', () => {
+
+  beforeEach(async () => {
+    await connection.sync();
+  });
+
+  afterAll(async () => {
+    await connection.clear();
+    await connection.close();
+  });
+
+  test('should create a new video', async () => {
+    const response = await request(app)
+      .post('/videos')
+      .type('json')
+      .send({
+        subject_id: 1,
+        url: "12345678912"
+      });
+
+      expect(response.statusCode).toEqual(201);
+  });
+  
+  test('should show all videos', async () => {
+    const response = await request(app)
+      .get('/videos');
+
+      expect(response.statusCode).toEqual(200);
+  });
+});
+
+describe('Exercises', () => {
+
+  beforeEach(async () => {
+    await connection.sync();
+  });
+
+  afterAll(async () => {
+    await connection.clear();
+    await connection.close();
+  });
+
+  test('should create a new exercise', async () => {
+    const response = await request(app)
+      .post('/exercises')
+      .type('json')
+      .send({
+        subject_id: 1,
+        content: {
+          question: "Quem escreve o algoritmo?",
+          answers: [
+            ["O programador", true],
+            "O usuário comum",
+            "A própria máquina, usando de base o código",
+            "O algoritmo não é escrito",
+          ]
+        }
+      });
+
+      expect(response.statusCode).toEqual(201);
+  });
+  
+  test('should show all exercises', async () => {
+    const response = await request(app)
+      .get('/exercises');
+
+      expect(response.statusCode).toEqual(200);
+  });
+});
