@@ -5,7 +5,7 @@ import Question from '../../../../components/Question';
 import StepByStep from '../../../../components/StepByStep';
 import TopicFooter from '../../../../components/TopicFooter';
 
-import styles from '../styles';
+import styles from '../../styles';
 
 const SecondPart = () => {
   return (
