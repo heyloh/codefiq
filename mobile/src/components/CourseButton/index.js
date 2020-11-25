@@ -22,6 +22,10 @@ const CourseButton = ({ isLocked = true, title, topic }) => {
     setIsVisible(true);
   }
 
+  function handleHidePopup() {
+    setIsVisible(false);
+  }
+
   return (
     <View style={styles.container}>
       <RectButton 
@@ -39,23 +43,31 @@ const CourseButton = ({ isLocked = true, title, topic }) => {
 
       <Dialog
           visible={isVisible}
+
           footer={
             <DialogFooter style={styles.dialogFoot}>
               <DialogButton
                 textStyle={styles.dialogTitleText}
-                text="Entendido"
-                onPress={() => { setIsVisible(false) }}
+                text="Fiquei triste"
+                onPress={handleHidePopup}
+                style={styles.dialogButtonSad}
+              />
+              <DialogButton
+                textStyle={styles.dialogTitleText}
+                text="Tudo bem"
+                onPress={handleHidePopup}
                 style={styles.dialogButton}
               />
             </DialogFooter>
           }
-          onTouchOutside={() => {
-            setIsVisible(false);
-          }}
+
+          onTouchOutside={handleHidePopup}
+
           dialogAnimation={new ScaleAnimation({
-            initialValue: 0, // optional
-            useNativeDriver: true, // optional
+            initialValue: 0,
+            useNativeDriver: true,
           })}
+
           dialogTitle={
             <DialogTitle 
               style={styles.dialogTitle} 
@@ -63,7 +75,6 @@ const CourseButton = ({ isLocked = true, title, topic }) => {
               textStyle={styles.dialogTitleText}
             />
           }
-          overlayOpacity={0.8}
         >
           <DialogContent style={styles.dialogContent}>
             <Text style={styles.text}>Estude os tópicos anteriores, em breve este estará disponível.</Text>

@@ -56,5 +56,8 @@ export default StyleSheet.create({
   },
   dialogButton: {
     backgroundColor: '#77BA7D',
+  },
+  dialogButtonSad:{
+    backgroundColor: '#C35252',
   }
 });
