@@ -2,6 +2,8 @@ import 'react-native-gesture-handler';
 
 import React, { useEffect } from 'react';
 
+import { StatusBar } from 'react-native';
+
 import AppStack from './src/routes/AppStack.js';
 
 import SplashScreen from 'react-native-splash-screen';
@@ -14,7 +16,10 @@ const App = () => {
   }, []);
 
   return (
-    <AppStack />
+    <>
+      <StatusBar backgroundColor="#20212B" barStyle="light-content" />
+      <AppStack />
+    </>
   );
 };
   
