@@ -10,7 +10,7 @@ const Home = () => {
     <ScrollView  contentContainerStyle={styles.contentContainer}>
       <Text style={styles.courseName}>Lógica de Programação</Text>
       <CourseButton title="Algoritmos" isLocked={false} topic="AlgoritmosStack" />
-      <CourseButton title="Variáveis" />
+      <CourseButton title="Variáveis" isLocked={false} topic="VariaveisStack"/>
       <CourseButton title="Objetos"/>
       <CourseButton title="Operadores Lógicos" />
       <CourseButton title="Condicionais" />
