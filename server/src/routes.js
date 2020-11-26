@@ -10,6 +10,8 @@ const VideoController = require('./controllers/VideoController');
 
 const ExerciseController = require('./controllers/ExerciseController');
 
+const ProgressController = require('./controllers/ProgressController');
+
 const routes = express.Router();
 
 /* Route for listing users */
@@ -32,5 +34,8 @@ routes.post('/videos', SubjectController.store);
 routes.get('/exercises', SubjectController.index);
 /* Route for creating a new exercise */
 routes.post('/exercises', SubjectController.store);
-
+/* Route for listing progress */
+routes.get('/progress', ProgressController.index);
+/* Route for creating a new exercise */
+routes.post('/progress', ProgressController.store);
 module.exports = routes;
