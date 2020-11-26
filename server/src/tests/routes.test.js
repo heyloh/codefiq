@@ -164,3 +164,34 @@ describe('Exercises', () => {
       expect(response.statusCode).toEqual(200);
   });
 });
+
+describe('Progress', () => {
+
+  beforeEach(async () => {
+    await connection.sync();
+  });
+
+  afterAll(async () => {
+    await connection.clear();
+    await connection.close();
+  });
+
+  test('should create a new progress', async () => {
+    const response = await request(app)
+      .post('/progress')
+      .send({
+        progress: {"example": "example"},
+        user_id: 5,
+        course_id: 9,   
+      });
+
+      expect(response.statusCode).toEqual(201);
+  });
+
+  test('should show all progress', async () => {
+    const response = await request(app)
+      .get('/progress');
+
+      expect(response.statusCode).toEqual(200);
+  });
+}); 
