@@ -36,6 +36,8 @@ routes.get('/exercises', SubjectController.index);
 routes.post('/exercises', SubjectController.store);
 /* Route for listing progress */
 routes.get('/progress', ProgressController.index);
-/* Route for creating a new exercise */
+/* Route for creating a new progress */
 routes.post('/progress', ProgressController.store);
+/* Route for update a progress */
+routes.put('/progress', ProgressController.update);
 module.exports = routes;

@@ -24,5 +24,29 @@ module.exports = {
       response.status(409).json({err});
       return next(err);
     }
+  },
+
+  async update(request, response, next) {
+    const { progress, user_id, course_id } = request.body;
+
+    /* Inserting the new progress on the database */
+    try {
+      
+      const prog_result = await Progress.update(
+                    {progress: progress}, 
+                    {where: {user_id: user_id, course_id: course_id}})
+                    .then (function ([rowsUpdate, [updatedBook]]) { 
+                      //res.json (updatedBook) 
+                      return response.status(201).json(updatedBook);
+                   });
+      /* Returning successfully */
+      
+
+    } catch (e){
+      /* Testing for errors in progress creation  */
+      const err = new Error(e);
+      response.status(409).json({err});
+      return next(err);
+    }
   }
 }; 

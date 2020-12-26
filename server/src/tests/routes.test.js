@@ -181,7 +181,7 @@ describe('Progress', () => {
       .post('/progress')
       .send({
         progress: {"example": "example"},
-        user_id: 5,
+        user_id: 2,
         course_id: 9,   
       });
 
@@ -193,5 +193,17 @@ describe('Progress', () => {
       .get('/progress');
 
       expect(response.statusCode).toEqual(200);
+  });
+
+  test('should update a progress', async () => {
+    const response = await request(app)
+      .post('/progress')
+      .send({
+        progress: {"update": "example"},
+        user_id: 2,
+        course_id: 9,   
+      });
+
+      expect(response.statusCode).toEqual(201);
   });
 }); 
