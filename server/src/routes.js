@@ -12,12 +12,20 @@ const ExerciseController = require('./controllers/ExerciseController');
 
 const ProgressController = require('./controllers/ProgressController');
 
+const TokenValidator = require('./middlewares/tokenValidator');
+
 const routes = express.Router();
 
 /* Route for listing users */
 routes.get('/users', UserController.index);
 /* Route for creating a new user */
 routes.post('/users', UserController.store);
+/* Route for signing in as a user */
+routes.get('/sign-in', UserController.show);
+/* Temporary route for validate the token */
+routes.get('/test', TokenValidator, async (request, response) => {
+  return response.json({});
+});
 /* Route for listing courses */
 routes.get('/courses', CourseController.index);
 /* Route for creating a new course */
