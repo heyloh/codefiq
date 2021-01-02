@@ -1,6 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 
-const { hash } = require('bcryptjs');
+const { hash, compare } = require('bcryptjs');
 
 class User extends Model {
   static init(connection) {
@@ -22,6 +22,12 @@ class User extends Model {
     })
 
     return this;
+  }
+
+  /* Compares this user's password with one given string */
+  async checkPassword(password) {
+    const sameHash = await compare(password, this.password_hash);
+    return sameHash;
   }
 }
 
