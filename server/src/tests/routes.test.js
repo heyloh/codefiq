@@ -62,6 +62,22 @@ describe('Users', () => {
 
       expect(response.statusCode).toEqual(200);
   });
+
+  test('should generate a valid token', async() => {
+    const { token } = await request(app)
+      .get('/sign-in')
+      .type('json')
+      .send({
+        email: 'user@email.com',
+        password: 'user1234'
+      });
+
+    const response = await request(app)
+      .get('/test')
+      .set('authorization', token)
+
+      expect(response.statusCode).toEqual(200);
+  })
 });
 
 describe('Subjects', () => {

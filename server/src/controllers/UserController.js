@@ -11,17 +11,22 @@ module.exports = {
     return response.json(users);
   },
 
-  /* The following method is used for sign in */
+  /* The following method is used for generate a valid token */
   async show(request, response) {
-    const {email, password} = request.body;
+    /* Getting user data from the request */
+    const { email, password } = request.body;
 
+    /* Checking if the given data matches the database */
     try {
-      const user = await User.findOne({ email });
+      /* Finding user by email */
+      const user = await User.findOne({ where: { cemail } });
 
-      if (!user.checkPassword(password))
+      if (!user || !user.checkPassword(password))
         return response.status(403).json({ error: 'Wrong email or password' });
       
       const token = sign({id: user.id}, secret, options);
+
+      console.log({email, token});
 
       return response.json({email, token});
     } catch (e){
