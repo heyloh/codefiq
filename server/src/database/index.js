@@ -7,6 +7,7 @@ const Course = require('../models/Course');
 const Subject = require('../models/Subject');
 const Video = require('../models/Video');
 const Exercise = require('../models/Exercise');
+const Progress = require('../models/Progress');
 
 /* Setting up the connection */
 const connection = new Sequelize(dbConfig);
@@ -17,5 +18,6 @@ Course.init(connection);
 Subject.init(connection);
 Video.init(connection);
 Exercise.init(connection);
+Progress.init(connection);
 
 module.exports = connection;

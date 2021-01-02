@@ -35,5 +35,39 @@ export default StyleSheet.create({
     height: 1,
     backgroundColor: '#67A8C3',
     marginTop: 30,
+  },
+  code: {
+    maxHeight: 300,
+    width: 370,
+    backgroundColor: '#20212A',
+    justifyContent: 'flex-start',
+    marginTop: 20,
+    paddingLeft: 20,
+    paddingBottom: 20,
+    borderRadius: 12,
+  },
+  highlight: {
+    fontFamily: 'Quicksand-Medium',
+    fontSize: 14,
+    lineHeight: 20,
+    color: '#685fa6',
+  },
+  pinkHighlight: {
+    fontFamily: 'Quicksand-Bold',
+    fontSize: 14,
+    lineHeight: 20,
+    color: '#ff33c1',
+  },
+  greenHighlight: {
+    fontFamily: 'Quicksand-Medium',
+    fontSize: 14,
+    lineHeight: 20,
+    color: '#77BA7D',
+  },
+  comment: {
+    fontFamily: 'Quicksand-Medium',
+    fontSize: 11,
+    lineHeight: 20,
+    color: '#9272c9'
   }
 })

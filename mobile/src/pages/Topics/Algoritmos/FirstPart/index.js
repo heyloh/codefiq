@@ -5,7 +5,7 @@ import Option from '../../../../components/Option';
 import Question from '../../../../components/Question';
 import TopicFooter from '../../../../components/TopicFooter';
 
-import styles from '../styles';
+import styles from '../../styles';
 
 const FirstPart = () => {
   return (

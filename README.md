@@ -22,11 +22,11 @@
 ## 💡 Objetivo
 
 Este é um projeto idealizado para conclusão do curso técnico em Informática no 
-CEFET/RJ, mas que pretende ir além do diploma. 
+CEFET/RJ. 
 
 Considerando que grande parte dos aplicativos que ensinam a programar estão 
 disponibilizados em língua estrangeira, o que impossibilita vários brasileiros 
-que não possuem fluência nessas de continuar seus estudos nesses aplicativos, 
+que não possuem fluência nessas línguas de continuar seus estudos nesses aplicativos, 
 foi projetado o <strong>Codefiq</strong>.
 
 ### De 🇧🇷 para 🇧🇷
@@ -35,9 +35,8 @@ Com o foco de ajudar aqueles que querem aprender sobre programação desde o zer
 porém não sabem por onde começar e gostam da possibilidade de aprender de 
 qualquer lugar com o auxílio do seu smartphone. 
 
-Este app, com conteúdo em nossa língua nativa, te possibilita aprender desde 
-Lógica de Programação até tópicos mais avançados da forma mais simplificada que 
-nosso time puder ensinar. 😉
+Este app, com conteúdo em nossa língua nativa, te possibilita aprender 
+Lógica de Programação da forma mais simplificada que nosso time puder ensinar.
 
 ---
 
@@ -72,10 +71,12 @@ Veja o protótipo no [Figma](https://www.figma.com/proto/GLdUH9W0zdrJ7RMUumZxNS/
 - Gerenciador de pacotes (Npm ou Yarn)
 
 Além disso, pode ser necessário seguir o passo a passo do setup disponível no 
-site do React Native, caso queira executar na sua máquina, é preciso ter um 
-emulador configurado  e caso queira executar em um dispositivo android real 
-certifique-se de tê-lo conectado por um cabo usb com modo de depuração do 
-android ativo. 
+site do React Native.
+
+Caso queira executar na sua máquina, é preciso ter um emulador configurado e 
+caso queira executar em um dispositivo android real certifique-se de tê-lo 
+conectado por um cabo usb com modo de depuração do 
+android ativo.
 
 > Em breve mais detalhes...
 
@@ -174,7 +175,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 #### Mobile:
 - <a href="https://reactnative.dev/">React Native</a> ⚛️
 - <a href="https://reactnavigation.org/">React Navigation</a> ⚛️
-- <a href="https://www.npmjs.com/package/react-native-popup-dialog">React Native Popup Dialog</a>
 - <a href="https://github.com/crazycodeboy/react-native-splash-screen">React Native Splash Screen</a>
 > Mais informações no arquivo package.json da pasta /mobile
 
@@ -184,33 +184,29 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ### Arlene Pelenda([@Julenne](https://github.com/Julenne))
 ⚙️ Contribuições:
- - Idealização
- - Produção de documentação
+ - Produção de diagramas 
  - Desenvolvimento do Backend da aplicação
 
 ### Lohana Torres([@heyloh](https://github.com/heyloh))
 ⚙️ Contribuições:
- - Idealização
  - Design de UI
  - Desenvolvimento do Mobile da aplicação
 
 ### Gean de Magalhães([@GE28](https://github.com/GE28))
 ⚙️ Contribuições:
- - Idealização
- - Produção de conteúdo didático
+ - Produção do conteúdo didático
  - Desenvolvimento do Backend da aplicação
  
  ### Mariana da Conceição([@MariTdc](https://github.com/MariTdc))
  ⚙️ Contribuições:
  - Produção de documentação
- - Produção de Diagramas
  - Pesquisa e Review
 
 ---
 
 ## 📝 Licença
 
-Este projeto esta sobe a licença [Apache 2.0](./LICENSE).
+Este projeto está sobe a licença [Apache 2.0](./LICENSE).
 
 ---
 
