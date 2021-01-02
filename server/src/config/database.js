@@ -1,10 +1,10 @@
 /* Configure the database to use PostgreSQL on Docker */
 
 module.exports = {
-  dialect: 'postgres',    /*  Selected database */
+  dialect: 'postgres',    /* Selected database */
   host: 'localhost',
-  username: 'postgres',   /*  Your Image name */
-  password: 'postgres',     /*  Your container password */
+  username: 'postgres',   /* Your Image name */
+  password: 'postgres',   /* Your container password */
   database: 'codefiq',    /* Desired name */
   define: {               /* Standards */
     timestamps: true,
