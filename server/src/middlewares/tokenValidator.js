@@ -1,8 +1,8 @@
-const{ verify } = require('jsonwebtoken');
+const { verify } = require('jsonwebtoken');
 
-const { secret, options } = require('../config/jsonwebtoken');
+const { secret } = require('../config/jsonwebtoken');
 
-export default function tokenValidator(req, res, next) {
+module.exports = function tokenValidator(req, res, next) {
   let token = req.headers.authorization;
 
   if (!token) {

@@ -19,14 +19,14 @@ module.exports = {
     /* Checking if the given data matches the database */
     try {
       /* Finding user by email */
-      const user = await User.findOne({ where: { cemail } });
+      const user = await User.findOne({ where: { email } });
 
+      /* Checking provided email and password */
       if (!user || !user.checkPassword(password))
         return response.status(403).json({ error: 'Wrong email or password' });
       
+      /* Generating a token */
       const token = sign({id: user.id}, secret, options);
-
-      console.log({email, token});
 
       return response.json({email, token});
     } catch (e){
