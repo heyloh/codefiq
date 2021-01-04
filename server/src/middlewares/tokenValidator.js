@@ -6,10 +6,8 @@ module.exports = function tokenValidator(req, res, next) {
   let token = req.headers.authorization;
 
   if (!token) {
-    return res.status(401).json({ message: 'Token not provided' });
+    return res.status(400).json({ message: 'Token not provided' });
   }
-
-  token = token.substring(7); // 'Bearer '
 
   try {
     const decoded = verify(token, secret);

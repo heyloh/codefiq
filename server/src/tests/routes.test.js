@@ -64,7 +64,7 @@ describe('Users', () => {
   });
 
   test('should generate a valid token', async() => {
-    const { token } = await request(app)
+    const { body } = await request(app)
       .get('/sign-in')
       .type('json')
       .send({
@@ -74,7 +74,7 @@ describe('Users', () => {
 
     const response = await request(app)
       .get('/test')
-      .set('authorization', token)
+      .set('authorization', body.token)
 
       expect(response.statusCode).toEqual(200);
   })
