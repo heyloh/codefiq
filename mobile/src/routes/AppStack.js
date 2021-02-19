@@ -21,6 +21,10 @@ export default function AppStack() {
   return (
     <NavigationContainer>
       <Navigator screenOptions={{headerShown: false}}>
+        <Screen name="Welcome" component={Welcome} />
+        <Screen name="Login" component={Login} />
+        <Screen name="Register" component={Register} />
+        
         <Screen 
           name="Home" 
           component={Home} 
@@ -29,11 +33,8 @@ export default function AppStack() {
             header: () => <Header title="Home" showBack={false} /> 
           }} 
         />
-        <Screen name="Welcome" component={Welcome} />
-        <Screen name="Login" component={Login} />
-        <Screen name="Register" component={Register} />
         <Screen name="AlgoritmosStack" component={AlgoritmosStack} />
-        <Screen name="VariaveisStack" component={VariaveisStack} />
+        <Screen name="VariáveisStack" component={VariaveisStack} />
       </Navigator>
     </NavigationContainer>
   );
