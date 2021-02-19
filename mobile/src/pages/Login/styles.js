@@ -66,6 +66,16 @@ export default StyleSheet.create({
     paddingLeft: 15,
   },
 
+  errMsg: {
+    marginTop: 5,
+    marginBottom: 3,
+    fontFamily: 'Quicksand-Medium',
+    fontStyle: 'normal',
+    fontSize: 14,
+    color: '#F68080',
+    paddingLeft: 30,
+  },
+
   checkboxContainer: {
     flexDirection: 'row',
     alignItems: 'center',

@@ -13,4 +13,9 @@ export default StyleSheet.create({
     color: '#EFF5F6',
     marginTop: 45,
   },
+
+  container: {
+    backgroundColor: '#242530',
+    flex: 1,
+  }
 });

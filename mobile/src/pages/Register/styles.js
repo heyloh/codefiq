@@ -77,6 +77,16 @@ export default StyleSheet.create({
     paddingLeft: 30,
   },
 
+  errMsg: {
+    marginTop: 5,
+    marginBottom: 3,
+    fontFamily: 'Quicksand-Medium',
+    fontStyle: 'normal',
+    fontSize: 14,
+    color: '#F68080',
+    paddingLeft: 30,
+  },
+
   buttonText: {
     fontFamily: 'Quicksand-Bold',
     fontSize: 16,
