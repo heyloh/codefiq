@@ -14,6 +14,8 @@ import { useNavigation } from '@react-navigation/native';
 import HeaderRegisterForm from '../../assets/images/HeaderRegisterForm.png';
 import Stairs from '../../assets/images/Stairs.png';
 
+import api from '../../services/api';
+
 import styles from './styles';
 
 const Register = () => {
@@ -25,8 +27,34 @@ const Register = () => {
   const [passwordConfirmation, setPasswordConfirmation] = useState('');
   const [avoidKeyboard, setAvoidKeyboard] = useState(false);
 
+  const [matchPwd, setMatchPwd] = useState(false);
+  const [showErr, setShowErr] = useState(false);
+
   function handleNavigateToLogin() {
     navigate('Login');
+  }
+
+  async function handleCreateUser() {
+    if (password !== passwordConfirmation) {
+      setMatchPwd(true);
+      return;
+    }
+
+    const data = {
+      username,
+      email,
+      password
+    };
+
+    try {
+      const response = await api.post('users', data);
+
+      if (response.status === 201) {
+        handleNavigateToLogin();
+      }
+    } catch (e) {
+      setShowErr(true);
+    }
   }
 
   return (
@@ -108,8 +136,17 @@ const Register = () => {
 
         </TextInput>
 
+        {matchPwd ? (
+          <Text style={styles.errMsg}>As senhas não combinam.</Text>
+        ) : <View />}
+
+        {showErr ? (
+          <Text style={styles.errMsg}>Algo deu errado, tente novamente.</Text>
+        ) : <View />}
+
         <TouchableOpacity
           style={styles.buttonPrimary}
+          onPress={handleCreateUser}
         >
           <Text style={styles.buttonText}>Cadastrar</Text>
         </TouchableOpacity>
