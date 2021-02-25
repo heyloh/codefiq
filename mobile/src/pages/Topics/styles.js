@@ -1,10 +1,10 @@
-import { StyleSheet } from 'react-native';
+import {StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
   container: {
     backgroundColor: '#242530',
     alignItems: 'center',
-    padding: 45,
+    padding: 25,
   },
   text: {
     fontFamily: 'Quicksand-Medium',
@@ -68,6 +68,6 @@ export default StyleSheet.create({
     fontFamily: 'Quicksand-Medium',
     fontSize: 11,
     lineHeight: 20,
-    color: '#9272c9'
-  }
-})
+    color: '#9272c9',
+  },
+});
