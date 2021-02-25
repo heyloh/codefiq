@@ -1,14 +1,16 @@
-import React, { useState } from 'react';
+import React, {useState, useContext} from 'react';
 import {
   Image,
   Text,
   TextInput,
   View,
   TouchableOpacity,
-  KeyboardAvoidingView
+  KeyboardAvoidingView,
 } from 'react-native';
 import CheckBox from '@react-native-community/checkbox';
-import { useNavigation } from '@react-navigation/native';
+import {useNavigation} from '@react-navigation/native';
+
+import {UserContext} from '../../contexts/UserContext';
 
 import HeaderForm from '../../assets/images/HeaderForm.png';
 import Stairs from '../../assets/images/Stairs.png';
@@ -19,7 +21,8 @@ import api from '../../services/api';
 import styles from './styles';
 
 const Login = () => {
-  const { navigate } = useNavigation();
+  const {login} = useContext(UserContext);
+  const {navigate} = useNavigation();
 
   /* const [isSelected, setSelection] = useState(false); */
   const [email, setEmail] = useState('');
@@ -35,7 +38,7 @@ const Login = () => {
   async function handleUserLogin() {
     const data = {
       email,
-      password
+      password,
     };
 
     try {
@@ -43,9 +46,10 @@ const Login = () => {
 
       if (response.data.token) {
         setErrMsg(false);
-        navigate('Home');
+        setEmail('');
+        setPassword('');
+        login(response.data.token, response.data.email);
       }
-
     } catch (e) {
       setErrMsg(true);
     }
@@ -55,22 +59,18 @@ const Login = () => {
     <KeyboardAvoidingView
       behavior={'position'}
       style={styles.container}
-      enabled={avoidKeyboard}
-    >
+      enabled={avoidKeyboard}>
       <Image source={HeaderForm} style={styles.headerForm} />
 
       <Image source={Stairs} style={styles.footerStairs} />
       <Image source={FooterDeco} style={styles.footerDeco} />
 
-      <View
-        style={styles.formContainer}
-      >
+      <View style={styles.formContainer}>
         <View style={styles.formHeader}>
           <Text style={styles.formTitle}>Faça login</Text>
           <TouchableOpacity
             style={styles.formAltButton}
-            onPress={handleNavigateToRegister}
-          >
+            onPress={handleNavigateToRegister}>
             <Text style={styles.formAlt}>criar uma conta</Text>
           </TouchableOpacity>
         </View>
@@ -81,11 +81,8 @@ const Login = () => {
           placeholderTextColor="#989EA6"
           returnKeyType="next"
           onFocus={() => setAvoidKeyboard(false)}
-          onChangeText={email => setEmail(email)}
-          defaultValue={email}
-        >
-
-        </TextInput>
+          onChangeText={(email) => setEmail(email)}
+          defaultValue={email}></TextInput>
         <TextInput
           style={styles.formInput}
           placeholder="•••••"
@@ -94,11 +91,8 @@ const Login = () => {
           autoCorrect={false}
           secureTextEntry={true}
           onFocus={() => setAvoidKeyboard(true)}
-          onChangeText={password => setPassword(password)}
-          defaultValue={password}
-        >
-
-        </TextInput>
+          onChangeText={(password) => setPassword(password)}
+          defaultValue={password}></TextInput>
 
         {/* <View style={styles.checkboxContainer}>
           <CheckBox
@@ -115,19 +109,18 @@ const Login = () => {
 
         {errMsg ? (
           <Text style={styles.errMsg}>E-mail e/ou senha incorretos.</Text>
-        ) : <View />}
+        ) : (
+          <View />
+        )}
 
         <TouchableOpacity
           style={styles.buttonPrimary}
-          onPress={handleUserLogin}
-        >
+          onPress={handleUserLogin}>
           <Text style={styles.buttonText}>Entrar</Text>
         </TouchableOpacity>
-
       </View>
-
     </KeyboardAvoidingView>
   );
-}
+};
 
 export default Login;
