@@ -1,35 +1,36 @@
-import React from 'react';
-import { Image, Text, View, StyleSheet } from 'react-native';
-import { RectButton } from 'react-native-gesture-handler';
-import { useNavigation } from '@react-navigation/native';
+import React, {useContext} from 'react';
+import {Image, Text, View, StyleSheet} from 'react-native';
+import {RectButton} from 'react-native-gesture-handler';
+import {useNavigation} from '@react-navigation/native';
+
+import {UserContext} from '../../../contexts/UserContext';
 
 import checkCircle from '../../../assets/icons/check-circle.png';
 
 const FinishTopic = ({route}) => {
-  const { topic } = route.params;
-  const { navigate } = useNavigation();
+  const {topic} = route.params;
+  const {navigate} = useNavigation();
+  const {resetClickedExercises} = useContext(UserContext);
 
-  function handleNavigateToHome() {
+  function handleFinish() {
+    resetClickedExercises();
     navigate('Home');
   }
 
-  return(
+  return (
     <View style={styles.container}>
-      <Image source={checkCircle} style={styles.success}/>
+      <Image source={checkCircle} style={styles.success} />
       <Text style={styles.title}>Parabéns!</Text>
       <Text style={styles.text}>
-        Você acabou de concluir o tópico de {topic}.
-        Siga em frente e continue aprendendo!
+        Você acabou de concluir o tópico de {topic}. Siga em frente e continue
+        aprendendo!
       </Text>
-      <RectButton 
-        style={styles.button}
-        onPress={handleNavigateToHome}
-      >
+      <RectButton style={styles.button} onPress={handleFinish}>
         <Text style={styles.buttonText}>Continuar</Text>
       </RectButton>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -70,6 +71,6 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: '#EFF5F6',
   },
-})
+});
 
 export default FinishTopic;
