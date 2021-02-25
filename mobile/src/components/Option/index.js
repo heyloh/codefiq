@@ -9,28 +9,24 @@ import right from '../../assets/icons/right.png';
 
 const Option = ({text, isCorrect, exerciseId}) => {
   const [showResult, setShowResult] = useState(false);
-  const {clickExercise, verifyIfEnabled, clickedExercises} = useContext(
-    UserContext,
-  );
-  const [clicked, setClicked] = useState(false);
+  const {clickedExercises, setClickedExercises} = useContext(UserContext);
 
-  function handleClick() {
-    clicked ? null : handleShowResult();
-  }
+  const [isEnabled, setIsEnabled] = useState(true);
 
-  function handleShowResult() {
+  function clickExercise() {
+    if (clickedExercises.includes(exerciseId)) {
+      setIsEnabled(false);
+      return;
+    }
+    setClickedExercises([...clickedExercises, exerciseId]);
     setShowResult(true);
   }
 
-  useEffect(() => {
-    setClicked(clickedExercises[exerciseId] ? true : false);
-  }, [clickedExercises]);
-
   return (
     <RectButton
-      enabled={verifyIfEnabled(exerciseId)}
+      enabled={isEnabled}
       style={styles.button}
-      onPress={handleClick}>
+      onPress={clickExercise}>
       <View style={styles.view}>
         <Text style={styles.text}>{text}</Text>
         {showResult ? (

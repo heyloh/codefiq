@@ -15,21 +15,9 @@ export function UserProvider({children}) {
     });
   }
 
-  function verifyIfEnabled(exerciseId) {
-    if (clickedExercises[exerciseId]) return false;
-    return true;
-  }
-
   function logoutUser() {
     setIsLoggedIn(false);
     setUserData(null);
-  }
-
-  function clickExercise(exerciseId) {
-    if (clickedExercises[exerciseId]) return true;
-    setClickedExercises([...clickedExercises, exerciseId]);
-    console.log(clickedExercises);
-    return false;
   }
 
   function resetClickedExercises() {
@@ -43,10 +31,9 @@ export function UserProvider({children}) {
         userData,
         login,
         logoutUser,
-        clickExercise,
         clickedExercises,
         resetClickedExercises,
-        verifyIfEnabled,
+        setClickedExercises,
       }}>
       {children}
     </UserContext.Provider>
