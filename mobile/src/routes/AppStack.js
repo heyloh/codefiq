@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 
@@ -15,27 +15,39 @@ import VariaveisStack from './VariaveisStack';
 // Components
 import Header from '../components/Header';
 
-const { Navigator, Screen }= createStackNavigator();
+// Contexts
+import {UserContext} from '../contexts/UserContext';
 
-export default function AppStack() {
+const {Navigator, Screen} = createStackNavigator();
+
+const AppStack = () => {
+  const {isLoggedIn} = useContext(UserContext);
   return (
     <NavigationContainer>
       <Navigator screenOptions={{headerShown: false}}>
-        <Screen name="Welcome" component={Welcome} />
-        <Screen name="Login" component={Login} />
-        <Screen name="Register" component={Register} />
-        
-        <Screen 
-          name="Home" 
-          component={Home} 
-          options={{
-            headerShown: true,
-            header: () => <Header title="Home" showBack={false} /> 
-          }} 
-        />
-        <Screen name="AlgoritmosStack" component={AlgoritmosStack} />
-        <Screen name="VariáveisStack" component={VariaveisStack} />
+        {isLoggedIn ? (
+          <>
+            <Screen
+              name="Home"
+              component={Home}
+              options={{
+                headerShown: true,
+                header: () => <Header title="Home" showBack={false} />,
+              }}
+            />
+            <Screen name="AlgoritmosStack" component={AlgoritmosStack} />
+            <Screen name="VariáveisStack" component={VariaveisStack} />
+          </>
+        ) : (
+          <>
+            <Screen name="Welcome" component={Welcome} />
+            <Screen name="Login" component={Login} />
+            <Screen name="Register" component={Register} />
+          </>
+        )}
       </Navigator>
     </NavigationContainer>
   );
-}
+};
+
+export default AppStack;
