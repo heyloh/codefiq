@@ -1,5 +1,5 @@
 import React from 'react';
-import { createStackNavigator } from '@react-navigation/stack';
+import {createStackNavigator} from '@react-navigation/stack';
 
 // Topics
 import FirstPart from '../pages/Topics/Algoritmos/FirstPart';
@@ -9,17 +9,17 @@ import FinishTopic from '../pages/Topics/FinishTopic';
 // Components
 import Header from '../components/Header';
 
-const { Navigator, Screen } = createStackNavigator();
+const {Navigator, Screen} = createStackNavigator();
 
-export default function AppStack() {
+const AlgoritmosStack = () => {
   return (
-    <Navigator screenOptions={{ headerShown: false }}>
+    <Navigator screenOptions={{headerShown: false}}>
       <Screen
         name="FirstPart"
         component={FirstPart}
         options={{
           headerShown: true,
-          header: () => <Header title="Algoritmos" />
+          header: () => <Header title="Algoritmos" />,
         }}
       />
       <Screen
@@ -27,14 +27,13 @@ export default function AppStack() {
         component={SecondPart}
         options={{
           headerShown: true,
-          header: () => <Header title="Algoritmos" />
+          header: () => <Header title="Algoritmos" />,
         }}
       />
 
-      <Screen
-        name="FinishTopic"
-        component={FinishTopic}
-      />
+      <Screen name="FinishTopic" component={FinishTopic} />
     </Navigator>
   );
-}
+};
+
+export default AlgoritmosStack;
