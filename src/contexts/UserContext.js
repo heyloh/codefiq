@@ -6,6 +6,10 @@ export function UserProvider({children}) {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [userData, setUserData] = useState(null);
   const [clickedExercises, setClickedExercises] = useState([]);
+  const [answers, setAnswers] = useState({
+    correct: 0,
+    incorrect: 0
+  });
 
   function login(email, token) {
     setIsLoggedIn(true);
@@ -24,6 +28,13 @@ export function UserProvider({children}) {
     setClickedExercises([]);
   }
 
+  function resetAnswers() {
+    setAnswers({
+      correct: 0,
+      incorrect: 0,
+    });
+  }
+
   return (
     <UserContext.Provider
       value={{
@@ -34,6 +45,9 @@ export function UserProvider({children}) {
         clickedExercises,
         resetClickedExercises,
         setClickedExercises,
+        answers,
+        setAnswers,
+        resetAnswers
       }}>
       {children}
     </UserContext.Provider>
