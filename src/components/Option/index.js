@@ -9,7 +9,12 @@ import right from '../../assets/icons/right.png';
 
 const Option = ({text, isCorrect, exerciseId}) => {
   const [showResult, setShowResult] = useState(false);
-  const {clickedExercises, setClickedExercises} = useContext(UserContext);
+  const {
+    clickedExercises,
+    setClickedExercises,
+    setAnswers,
+    answers,
+  } = useContext(UserContext);
 
   const [isEnabled, setIsEnabled] = useState(true);
 
@@ -20,6 +25,21 @@ const Option = ({text, isCorrect, exerciseId}) => {
     }
     setClickedExercises([...clickedExercises, exerciseId]);
     setShowResult(true);
+
+    const actualRightTotal = answers.correct + 1;
+    const actualWrongTotal = answers.incorrect + 1;
+
+    if (isCorrect) {
+      setAnswers({
+        correct: actualRightTotal,
+        incorrect: answers.incorrect,
+      });
+    } else {
+      setAnswers({
+        correct: answers.correct,
+        incorrect: actualWrongTotal,
+      });
+    }
   }
 
   return (
