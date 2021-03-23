@@ -55,71 +55,7 @@ Veja o protótipo no [Figma](https://www.figma.com/proto/GLdUH9W0zdrJ7RMUumZxNS/
 
 ## 💻 Executando o Codefiq
 
-### Pré-requisitos
-
-É necessário ter instalado na sua máquina para execução desse projeto:
-
-- NodeJS
-- Gerenciador de pacotes (Npm ou Yarn)
-
-Além disso, pode ser necessário seguir o passo a passo do setup disponível no site do React Native.
-
-Caso queira executar na sua máquina, é preciso ter um emulador configurado e caso queira executar em um dispositivo android real certifique-se de tê-lo conectado por um cabo usb com modo de depuração do android ativo.
-
-### ♊ Clonando o Repositório
-
-```bash
-
-$ git clone https://github.com/heyloh/codefiq.git
-
-# entre na pasta do projeto
-$ cd codefiq
-
-```
-
-### 📱 Rodando o App
-
-<br>
-
-Instale as dependências
-
-```bash
-
-# utilizando yarn
-$ yarn
-
-# ou utilizando npm
-$ npm install
-
-```
-
-<br>
-
-Inicie o metro bundler
-
-```bash
-
-# utilizando yarn
-$ yarn start
-
-# ou utilizando npm
-$ npm start
-
-```
-
-<br>
-
-Instale o app
-
-```bash
-
-# utilizando yarn
-$ yarn android
-
-# ou utilizando npm
-$ npm android
-
-```
+Baixe e instale o último release do app no link: https://github.com/heyloh/codefiq/releases
 
 <br>
 
