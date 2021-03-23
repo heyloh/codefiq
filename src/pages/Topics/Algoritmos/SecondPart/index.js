@@ -12,10 +12,10 @@ const SecondPart = () => {
   const [exercises, setExercises] = useState([]);
 
   useEffect(() => {
-    api.get(`/exercises?subject_id=6`).then((response) => {
+    api.get(`/exercises/6`).then((response) => {
       setExercises(response.data);
     });
-  });
+  }, []);
 
   return (
     <>
